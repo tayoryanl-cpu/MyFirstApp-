@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Index Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css"/>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+<div data-role="header">
+<h1>jQuery Mobile Popup</h1>
+</div>
+<div role="main" class="ui=content">
+<p>jQuery Mobile Popup Image</p>
+<a href="jqmimage.html" target="_self" class="ui-btn">Popup
+Image</a>
+<a href="jqmimagelistview.html" target="_self" class="ui-btn">Popup in
+Listview</a>
+<a href="#popupCloseRight" data-rel="popup"
+data-position-to="window" class="ui-btn ui-btn-b data-transition="pop"
+>Exit
+<div data-role="popup" id="popupCloseRight" class="ui-content">
+<p>Are you sure you want to close the app?</p>
+<a onclick="closeApp()" data-role="button" data-theme="a">Yes</a>
+<a href="#" data-rel="back" data-role="button" data-theme="b">No</a>
+</div>
+</div>
+<div data-role="footer" data-position="fixed">
+<h4> Mobile Application Development </h4>
+</div>
+</div>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
+Jqmimage.html
+<!DOCTYPE html>
+<html>
+<head>
+<title> jQuery Mobile Collapsible </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css"/>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head
+<body>
+<div data-role="page">
+<div data-role="header" data-position ="fixed">
+<a href="index.html" class="ui-btn ui-corner-all ui-icon-back
+ui-btn-icon-left"> Back </a>
+<h1> jQM Popup </h1>
+</div>
+<div role="main" class="ui=content">
+<h2>Popup Image</h2>
+<a href="#popupdinzky" data-rel="popup"
+data-position="wimdow" data-transition="fade"><img src="img/Dinzky.jpg"
+height="100px" width="100px" alt="Dinzky"></a>
+<div data-role="popup" id="popupdinzky" data-overlay-theme="b"
+data-corners="false">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all
+ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a> <img
+class="popphoto" src="img/Dinzky.jpg" style="max-height: 512px;" alt="Dinzky">
+</div>
+<!--/piolo -->
+<a href="#popupPiolo" data-rel="popup" data-position="wimdow"
+data-transition="fade"><img src="img/Piolo.jpg" height="100px" width="100px"
+alt="Piolo"></a>
+<div data-role="popup" id="popupPiolo" data-overlay-theme="b"
+data-corners="false">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all
+ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a> <img
+class="popphoto" src="img/Piolo.jpg" style="max-height: 512px;" alt="Piolo">
+</div>
+<!--/Sam -->
+<a href="#popupSam" data-rel="popup" data-position="wimdow"
+data-transition="fade"><img src="img/Sam.jpg" height="100px" width="100px"
+alt="Sam"></a>
+<div data-role="popup" id="popupSam" data-overlay-theme="b"
+data-corners="false">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all
+ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a> <img
+class="popphoto" src="img/Sam.jpg" style="max-height: 512px;" alt="Sam">
+</div>
+<!--/Aga -->
+<a href="#popupAga" data-rel="popup" data-position="wimdow"
+data-transition="fade"><img src="img/Aga.jpg" height="100px" width="100px"
+alt="Aga"></a>
+<div data-role="popup" id="popupAga" data-overlay-theme="b"
+data-corners="false">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all
+ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a> <img
+class="popphoto" src="img/Aga.jpg" style="max-height: 512px;" alt="Aga">
+</div>
+</div>
+<div data-role="footer" data-position="fixed">
+<h4> Mobile Application Development </h4>
+</div>
+</div>
+</body>
+</html>
+Jqmimagelistview.html
+<!DOCTYPE html>
+<html>
+<head>
+<title> jQuery Mobile Collapsible </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css"/>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+<div data-role="header" data-position ="fixed">
+<a href="index.html" class="ui-btn ui-corner-all ui-icon-back
+ui-btn-icon-left"> Back </a>
+<h1> jQM Listview </h1>
+</div>
+<div role="main" class="ui=content">
+<h2>Listview Thumbnail</h2>
+<ul data-role="listview" data-inset="true">
+<li><a href="#popupdinzky" data-rel="popup"
+data-position-to="window" data-transition="fade">
+<img src="img/thumbnail/Dinzky.jpg">
+<h2> Dinzky Ichigo III </h2>
+<p> IT Instructor </p>
+</li>
+</ul>
+<div data-role="popup" id="popupdinzky" data-overlay-theme="b"
+data-corners="false">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all
+ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a> <img
+class="popphoto" src="img/Dinzky.jpg" style="max-height: 512px;" alt="Dinzky">
+</div>
+<!--/piolo -->
+<ul data-role="listview" data-inset="true">
+<li><a href="#popuppiolo" data-rel="popup"
+data-position-to="window" data-transition="fade">
+<img src="img/thumbnail/Piolo.jpg">
+<h2> Piolo </h2>
+<p> House Boy </p>
+</li>
+</ul>
+<div data-role="popup" id="popuppiolo" data-overlay-theme="b"
+data-corners="false">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all
+ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a> <img
+class="popphoto" src="img/Piolo.jpg" style="max-height: 512px;" alt="Piolo">
+</div>
+</div>
+<div data-role="footer" data-position="fixed">
+<h4> Mobile Application Development </h4>
+</div>
+</div>
+</body>
+</html>
+Config.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/1.0"
+id = "com.phonegap.jqmcss"
+versionCode="1"
+version="1.0">
+<name> JQM Popup Image</name>
+<description> JQM Popup</description>
+<author href="google.com" email="test@gmail.com">
+MCC BSIT DEPARTMENT
+</author>
+<icon src="icon.png"/>
+<platform name="ios"/>
+<platform name="android"/>
+<platform name="winphone"/>
+<preference name="phonegap-version" value="cli-6.5.0" />
+</widget>
